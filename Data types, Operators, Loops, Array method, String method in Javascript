@@ -1,0 +1,127 @@
+// console.log("Hello World");
+// console.warn("this is warning");
+// console.error("this is an error");
+var number1 = 34;
+var number2 = 56;
+console.log(number1 + number2);
+// 4.Data types in javascript 
+// Numbers
+var num1 = 455;
+var num2 = 56.76;
+//String
+var str1 = "This is a string";
+var str2 = 'This is also a string';
+//objets
+var marks = {
+    ravi: 34,
+    shubham: 78,
+    harry: 99.977
+}
+console.log(marks);
+//Booleans
+var a = true;
+var b = false;
+console.log(a, b);
+// var und = undefined ;
+var und;
+console.log(und);
+var n = null;
+console.log(n);
+/*
+ At a very high level, there are two types of data types in Javascript;
+ 1. Primitive data types : undefined,number,string,boolean,Symbol
+ 2. Reference data types : Arrays and Objects
+ */
+
+var arr = [1, 2, "somya", 4, 5];
+console.log(arr);
+//Operators in Javascript
+//Arithemetic Operators 
+var a = 100;
+var b = 10;
+console.log("The value of a + b is", a + b);
+console.log("The value of a - b is", a - b);
+console.log("The value of a * b is", a * b);
+console.log("The value of a / b is", a / b);
+//Assignment Operators
+var c = b;
+c += 2;
+console.log(c);
+console.log(a == b);
+console.log(a >= b);
+console.log(a <= b);
+
+console.log(true && true);
+console.log(true && false);
+console.log(false && false);
+
+console.log(true || true);
+console.log(true || false);
+console.log(false || false);
+
+console.log(!true);
+console.log(!false);
+//Functions in Javascript
+//DRY = Do not repeat yourself
+function avg(a, b) {
+    c = (a + b) / 2;
+    return c;
+}
+c1 = avg(14, 16);
+c2 = avg(4, 6);
+console.log(c1, c2)
+//Conditionals in Javascript
+var age = 4
+if (age > 8) {
+    console.log('You are not a kid');
+}
+else {
+    console.log('You are a kid');
+}
+//Loops in Javascript
+var arr = [1, 2, 3, 4, 5, 6, 7];
+// console.log(arr);
+// for(var i=0;i<arr.length;i++){
+//     if(i==2){
+//         //break;
+//         continue;
+//     }
+// console.log(arr[i]);
+// }
+// arr.forEach(function(element){
+// console.log(element)
+//})
+
+
+// const t = 0;
+// t++; 
+// t = t+1;
+//let j = 0;
+// while (j < arr.length) {
+//     console.log(arr[j]);
+//     j++;
+// }
+// do {
+//     console.log(arr[j]);
+//     j++
+// } while (j < arr.length);
+let myarr = ["Fan", "Clock", 34, null, true];
+//Array Methods
+console.log(myarr.length);
+//   myarr.pop();
+//   myarr.push("aadi");
+//   myarr.shift();
+//   console.log(myarr);
+//myarr.unshift("Harry");
+const newlen = myarr.unshift("Harry");
+console.log(newlen);
+console.log(myarr);
+//String Method in Javascript
+let mylovelystring = "Harry is a good boy good good";
+// console.log(mylovelystring.length);
+// console.log(mylovelystring.indexOf("good"));
+// console.log(mylovelystring.lastIndexOf("good"));
+//slicing in JS
+// console.log(mylovelystring.slice(1,4)); 
+ d = mylovelystring.replace("Harry","Rohan");
+console.log(d,mylovelystring);
